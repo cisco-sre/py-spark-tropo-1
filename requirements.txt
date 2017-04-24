@@ -1,0 +1,11 @@
+ciscosparkapi>=0.5.5
+Flask>=0.12
+Flask-Bootstrap>=3.3.7.1
+Flask-Debug>=0.4.3
+Flask-WTF==0.14.2
+flask-nav>=0.6
+flask-konch>=1.1.0
+requests>=2.13.0
+requests-toolbelt>=0.7.1
+smartsheet-python-sdk>=1.0.1
+https://github.com/rsp2k/ciscotropowebapi/archive/master.zip

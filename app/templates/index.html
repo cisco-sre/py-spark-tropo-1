@@ -1,0 +1,24 @@
+{# This simple template derives from ``base.html``. See ``base.html`` for
+   more information about template inheritance. #}
+{%- extends "base.html" %}
+
+{# Loads some of the macros included with Flask-Bootstrap. We are using the
+   utils module here to automatically render Flask's flashed messages in a
+   bootstrap friendly manner #}
+{% import "bootstrap/utils.html" as utils %}
+
+
+{# Inside the ``content`` is where you should place most of your own stuff.
+   This will keep scripts at the page end and a navbar you add on later
+   intact. #}
+{% block content %}
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Cisco Spark / Tropo API Lab</h1>
+            <p>Let's get started</p>
+            <p>
+                <a class="btn btn-lg btn-default" role="button" href="{{ url_for('frontend.contact') }}" >Contact Us</a>
+            </p>
+        </div>
+     </div>
+{%- endblock %}
