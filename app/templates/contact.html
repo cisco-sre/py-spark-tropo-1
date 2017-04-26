@@ -18,6 +18,7 @@
        <form class="form form-horizontal" method="post" role="form">
          {{ form.hidden_tag() }}
          {{ wtf.form_errors(form, hiddens="only") }}
+         {{ wtf.form_field(form.email) }}
          {{ wtf.form_field(form.phone) }}
          {{ wtf.form_field(form.message) }}
          <button type ="submit" class="btn btn-primary">Send Message</button>
