@@ -36,18 +36,18 @@ def webhook_process(request, webhook_url):
             # add a + if necessary
             number_to_call = '+' + number_to_call
 
-        message = tropo_session.parameters['message']
+        message = tropo_session.parameters['msg']
 
         logging.log(logging.INFO,
                     "send_sms request to %s. Message %s" % (number_to_call, message))
 
         # We could use call and send as shown here: https://www.tropo.com/docs/webapi/quickstarts/sending-text-messages
         # tropo_response.call(to=number_to_call, network="SMS")
-        # tropo_response.say(message)
+        # tropo_response.say(msg)
 
         # Better yet, use the message "shortcut"
         # https://www.tropo.com/docs/webapi/quickstarts/mixing-text-voice-single-app/using-message-shortcut
-        tropo_response.message(tropo_session.parameters['message'], number_to_call, network="SMS")
+        tropo_response.message(message, number_to_call, network="SMS")
 
     # Inbound Voice Call
     elif tropo_session.from_['network'] is 'VOICE':
@@ -109,7 +109,7 @@ def send_sms(destination_number, text_message):
     query_string = {'action':'create',
                     'token':config.TROPO_KEY,
                     'numberToDial':destination_number,
-                    'message':text_message,
+                    'msg':text_message,
                    }
 
     url = 'https://api.tropo.com/1.0/sessions?%s' % urlencode(query_string)
