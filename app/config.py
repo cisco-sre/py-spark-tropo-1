@@ -4,21 +4,21 @@
 
 # dCloud external URL, used when creating Spark webhook
 # Public facing name of the webapp
-SERVER_NAME = 'webapp.vpod651.dc-01.com'
+SERVER_NAME = ''
 
 # Phone number to redirect inbound voice calls to
-CUSTOMER_SERVICE_REDIRECT_DN = '+12083756499'
+CUSTOMER_SERVICE_REDIRECT_DN = ''
 
 # Key for Tropo Send SMS application
-TROPO_KEY = '69554e5a6d6e5a6a4371766e465a43526255547543536a4463486d684d5265764a6e754675796a6d6f6c536f'
+TROPO_KEY = ''
 
 # Spark token
-SPARK_TOKEN = 'M2Q2ZjYxZGMtMWVkNy00M2ZjLWI3ZWMtZGEzMWI0NWMwZDUzOGM4NjJlMjYtYWMw'
+SPARK_TOKEN = ''
 
 # Id of Agent Team to create customer rooms under
-SPARK_AGENT_TEAM_ID = '9bbab210-2637-11e7-a892-e9d58302014a'
-SPARK_CUSTOMER_EMAIL = 'kkdoijvr@sharklasers.com'
-SPARK_TEAM_GENERAL_ROOM_ID = 'Y2lzY29zcGFyazovL3VzL1JPT00vYTlkNzkwNDAtMjYwOC0xMWU3LWIyZmEtZmI4YzMyNmRkMzI0'
+SPARK_AGENT_TEAM_ID = ''
+SPARK_CUSTOMERPROXY_EMAIL = ''
+SPARK_TEAM_GENERAL_ROOM_ID = ''
 
 SPARK_TASK_ASSIGN_MOST_IDLE_ACTIVE = False
 
