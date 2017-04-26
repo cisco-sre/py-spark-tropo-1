@@ -1,9 +1,10 @@
 # User defined variables
-# to use these in you app you must first 'from app import config', prefix variable names in this file with config.
-# Eg, SERVERNAME in this file would be availabe as config.SERVER_NAME after the import
+# to use these in you app you must first 'from app import config',
+# prefix variable names in this file with config.
+# Eg, SERVER_NAME in this file would be available as config.SERVER_NAME after the import
 
 # dCloud external URL, used when creating Spark webhook
-# Public facing name of the webapp
+# Public facing name of the application
 SERVER_NAME = ''
 
 # Phone number to redirect inbound voice calls to
@@ -17,10 +18,12 @@ SPARK_TOKEN = ''
 
 # Id of Agent Team to create customer rooms under
 SPARK_AGENT_TEAM_ID = ''
-SPARK_CUSTOMERPROXY_EMAIL = ''
-SPARK_TEAM_GENERAL_ROOM_ID = ''
 
-SPARK_TASK_ASSIGN_MOST_IDLE_ACTIVE = False
+# Email address of Customer Proxy account - used to prevent "echo" of messages received on SMS
+SPARK_CUSTOMER_PROXY_EMAIL = ''
+
+# If set to true, agents email will need to be in the same domain as SPARK_CUSTOMER_PROXY_EMAIL
+SPARK_TASK_ASSIGN_MOST_IDLE_ACTIVE = True
 
 # Optional: Used to validate webhook request came from Spark
 SPARK_WEBHOOK_SECRET = ''

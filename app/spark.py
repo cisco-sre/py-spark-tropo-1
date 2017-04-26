@@ -66,7 +66,7 @@ def assign_team_member_to_customer_room(room, **room_args):
     # Loop over all members of team
     for membership in spark_api.team_memberships.list(teamId=config.SPARK_AGENT_TEAM_ID):
         # skip our self
-        if membership.personEmail == config.SPARK_CUSTOMERPROXY_EMAIL:
+        if membership.personEmail == config.SPARK_CUSTOMER_PROXY_EMAIL:
             continue
 
         # Skip people already in room
@@ -135,7 +135,7 @@ def customer_room_message_send(customer_id, **room_args):
 
     # Check if any agents are in the room
     for membership in spark_api.memberships.list(roomId=room.id):
-        if membership.personEmail == config.SPARK_CUSTOMERPROXY_EMAIL:
+        if membership.personEmail == config.SPARK_CUSTOMER_PROXY_EMAIL:
             # Skip our "bot user"
             logging.log(logging.INFO, 'Skipping bot user')
             continue
@@ -259,7 +259,7 @@ def webhook_process(request):
             abort(400)
 
     # Loop/echo prevention
-    if request.json['data']['personEmail'] == config.SPARK_CUSTOMERPROXY_EMAIL:
+    if request.json['data']['personEmail'] == config.SPARK_CUSTOMER_PROXY_EMAIL:
         return "OK"
 
     # Connect to Spark API
