@@ -28,7 +28,7 @@ When you have completed the following scenarios, you will have learned how to us
 
 # First Time setup
 - Clone this repository (will fail if the destination directory exists)
-  * git clone https://github.com/rsp2k/website.git
+  * git clone https://github.com/cisco-sre/py-spark-tropo-1.git
 - Enter newly created repository directory
   * cd website
 - Create virtualenv
