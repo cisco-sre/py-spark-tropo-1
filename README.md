@@ -30,7 +30,7 @@ When you have completed the following scenarios, you will have learned how to us
 - Clone this repository (will fail if the destination directory exists)
   * git clone https://github.com/cisco-sre/py-spark-tropo-1.git
 - Enter newly created repository directory
-  * cd website
+  * cd cd py-spark-tropo-1
 - Create virtualenv
   * python virtualenv venv --python=python3
 - Install requirements
