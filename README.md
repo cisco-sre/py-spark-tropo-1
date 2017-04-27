@@ -35,6 +35,12 @@ When you have completed the following scenarios, you will have learned how to us
   * python virtualenv venv --python=python3
 - Install requirements
   * pip install -r requirements.txt
+- Setup app/config.py
+  * Set the various settings in app/config.py, see comments for more info
+  * Tropo Key - Tropo WebAPI key that points to this app /api/tropo-webhook/
+  * Spark Token - Token of the CustomerProxy user
+  * Agent Team ID - ID of team that the Customer rooms are created under
+  * Customer Proxy email address - email address associated with the Spark Token
 
 # Launch
 - From a terminal window, change to the directory where the repository was checked out above
@@ -51,6 +57,11 @@ When you have completed the following scenarios, you will have learned how to us
     * set FLASK_DEBUG=1
     * set FLASK_APP=application.py
     * flask run
+    
+- Copy and paste the value of app/config.py:SERVER_NAME into your browser and you should see the homepage
+- Use the contact form or send a SMS to your Tropo # that the key in app.config.py references to create a Spark Room and post a message to it
+- Invite
+- 
     
 
 # Notes
