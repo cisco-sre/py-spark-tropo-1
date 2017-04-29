@@ -32,7 +32,12 @@ When you have completed the following scenarios, you will have learned how to us
 - Enter newly created repository directory
   * cd cd py-spark-tropo-1
 - Create virtualenv
-  * python virtualenv venv --python=python3
+  * virtualenv venv --python=python3
+  - Make sure virtualenv is loaded
+  - Mac/Linux
+    * source venv/bin/activate
+  - Windows
+    * venv\Scripts\activate
 - Install requirements
   * pip install -r requirements.txt
 - Setup app/config.py
