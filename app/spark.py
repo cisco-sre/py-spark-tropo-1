@@ -111,7 +111,7 @@ def customer_room_message_send(customer_id, **room_args):
     Posts message to customer's Spark Room for customer_id using room_args. Room/Webhook will be created if necessary.
     :param customer_id: Customer Phone Number (may start with 1)
     :param room_args: text/markup/file/webhook_url
-    :return: Cisco Spark Message object 
+    :return: Cisco Spark Message object
     """
 
     # Basic sanity checking
@@ -273,7 +273,7 @@ def webhook_process(request):
 
     # allow agents to privately exchange messages within context of the customer space
     # without sending a copy to the customer (agent whisper/notes)
-    if message.mentionedPeople and message.mentionedPeople:
+    if message.mentionedPeople:
         return 'OK'
 
     # customer id is room name
