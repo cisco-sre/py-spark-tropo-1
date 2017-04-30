@@ -17,7 +17,7 @@ nav.register_element('frontend_top', Navbar(
         'Tropo',
         Link('My Tropo Apps', 'https://www.tropo.com/applications'),
         Link('My Tropo Logs', 'https://www.tropo.com/mylogs'),
-        Link('Python Module', 'https://github.com/rsp2k/ciscotropowebapi'),
+        Link('Python Module', 'https://github.com/cisco-sre/ciscotropowebapi'),
         Link('SparkLog4Tropo', 'https://gist.github.com/ObjectIsAdvantag/b73db0cffcedb1152a2d6669cb3d27b0'),
         Link('WebAPI Docs', 'https://www.tropo.com/docs/webapi'),
         Link('Forums', 'https://support.tropo.com/hc/en-us/community/topics'),
