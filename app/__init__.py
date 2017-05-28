@@ -23,7 +23,8 @@ def create_app(configfile=None):
 
     app.config['SECRET_KEY'] = 'NOT SO SECRET'
 
-    app.config['SERVER_NAME'] = config.SERVER_NAME
+    if config.SERVER_NAME:
+       app.config['SERVER_NAME'] = config.SERVER_NAME
 
     # https://pythonhosted.org/Flask-Bootstrap/
     Bootstrap(app)
